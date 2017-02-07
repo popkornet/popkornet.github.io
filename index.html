@@ -106,7 +106,7 @@
         <div class="row">
          	
     
-	        <div class="col-sm-4 portfolio-item">
+	        <div class="col-sm-4 text-center portfolio-item simpleCart_shelfItem">
 	        	    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
 	        	        <div class="caption">
 	        	            <div class="caption-content">
@@ -115,7 +115,15 @@
 	        	        </div>
 	        	        <img src="/images/portfolio/snillgutt.jpg" class="img-responsive" alt="">
 	        	    </a>
+								<a class="item_add btn btn-sm btn-outline" href="javascript:;"> 
+									Bestill <span class="item_name"> Snill gutt</span> | <span class="item_price">289</span>
+								</a>
 	        	</div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="text-note portfolio-note">
+            </div>
+        </div>
             
         </div>
     </div>
@@ -185,7 +193,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
-				<form  action="http://formspree.io/stian.lode+formspree@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+				<form  action="https://formspree.io/stian.lode+formspree@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
 					<div class="row control-group">
 						<div class="form-group col-xs-12 floating-label-form-group controls">
 							<label>Navn</label>
@@ -207,11 +215,18 @@
 					<div class="row control-group">
 						<div class="form-group col-xs-12 floating-label-form-group controls">
 							<label>Forespørsel</label>
-							<textarea rows="5" name="message" class="form-control" placeholder="Hva kan vi hjelpe deg med?" id="message" required data-validation-required-message="Ikke glem å si hva vi kan gjøre for deg."></textarea>
+							<textarea rows="5" name="message" class="form-control" placeholder="Hva kan vi hjelpe deg med?" id="message"></textarea>
 							<p class="help-block text-danger"></p>
 						</div>
 					</div>
 					<br>
+					<div class="row control-group">
+						<div class="form-group col-xs-12">
+              <input type="hidden" class="bokbestilling"  name="bokbestilling" value="">
+              <p class="simpleCart_items"></p>
+              <p class="sc-total">(<span class="simpleCart_shipping"></span> frakt + <span class="simpleCart_total"></span>) Total: <span class="simpleCart_grandTotal"></span></p>
+            </div>
+          </div>
 					<div id="success"></div>
 					<div class="row">
 						<div class="form-group col-xs-12">
@@ -301,11 +316,11 @@ marsdag i 2014 diagnostisert med Parkinson. Snill gutt tar for seg den
 turbulente reisen før Parkinson og den etter.</p>
 </p>
 			                        <ul class="list-inline item-details">
+			                            <!-- 
 			                            <li>Kunde:
 			                                <strong><a href="">Stig Dale</a>
 			                                </strong>
 			                            </li>
-			                            <!-- 
 <li>Date:
 			                                <strong><a href="http://startbootstrap.com">2017-01-13 00:00:00+01:00</a>
 			                                </strong>
@@ -356,6 +371,10 @@ turbulente reisen før Parkinson og den etter.</p>
 	
 		<!-- script is a local library -->
 			<script src="/static/js/contact_me.js"></script>
+		
+	
+		<!-- script is a local library -->
+			<script src="/static/js/simpleCartPopkornet.js"></script>
 		
 	
 		<!-- script is a local library -->

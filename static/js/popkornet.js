@@ -42,4 +42,25 @@ $(document).ready(function() {
         document.getElementById('focusme').focus();
     });
 
+simpleCart({
+  checkout: {
+    type: "Custom"
+  },
+  cartColumns: [
+      { attr: "name" , label: "Tittel" } ,
+      { attr: "price" , label: "Pris", view: 'currency' } ,
+      { view: "decrement" , label: false , text: "<span class='fa fa-fw fa-minus'></span>" } ,
+      { attr: "quantity" , label: "Antall" } ,
+      { view: "increment" , label: false , text: "<span class='fa fa-fw fa-plus'></span>" } ,
+      { attr: "total" , label: "Subtotal", view: 'currency' } ,
+      { view: "remove" , text: "<span class='fa fa-fw fa-close text-danger'></span>" , label: false }
+  ],
+  currency: "NOK",
+  cartStyle: "table",
+  cartClass: "table table-responsive table-condensed table-inverse",
+  shippingQuantityRate: 57,
+  update: function() {
+      $(".portfolio-note").text("Gå til kontaktformen for å sende bestillingen.")
+    },
+});
 
