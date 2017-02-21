@@ -235,6 +235,11 @@ section.success .mugshot img {
   border-radius: 50%;
 }
 
+section.success a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -243,21 +248,6 @@ section.success .mugshot img {
     section.first {
         padding-top: 75px;
     }
-}
-
-#portfolio .btn-outline {
-    margin-top: 15px;
-    border: solid 2px #ff99c8;
-    font-size: 15px;
-    color: #ff99c8;
-    transition: all .3s ease-in-out;
-}
-
-#portfolio .btn-outline:hover {
-    border: solid 2px #ff99c8;
-    font-size: 15px;
-    background: #ff99c8;
-    color: #fff;
 }
 
 #portfolio .portfolio-item {
@@ -516,34 +506,4 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-}
-
-#contact table {
-  color: #555;
-}
-
-#contact table a {
-  text-decoration: none;
-}
-
-#contact .item-total {
-  text-align: right;
-}
-
-#contact .item-quantity {
-  width: 20px;
-  text-align: center;
-}
-
-#contact .item-remove,
-#contact .item-decrement,
-#contact .item-increment {
-  width: 12px;
-}
-
-#contact .sc-total {
-  color: #555;
-  border: 1px solid #888;
-  border-width: 2px 0;
-  text-align: right;
 }
