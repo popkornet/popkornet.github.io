@@ -28,7 +28,7 @@ $(function() {
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
-    target: '.navbar-fixed-top'
+    target: '.navbar-shrinkable'
 })
 
 // Closes the Responsive Menu on Menu Item Click
@@ -36,10 +36,7 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-
 $(document).ready(function() {
         // put all your jQuery goodness in here.
         document.getElementById('focusme').focus();
     });
-
-
