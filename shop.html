@@ -194,7 +194,8 @@
 						<div class="form-group col-xs-12">
               <input type="hidden" class="bokbestilling"  name="bokbestilling" value="">
               <p class="simpleCart_items"></p>
-              <p class="sc-total">(<span class="simpleCart_shipping"></span> frakt + <span class="simpleCart_total"></span>) Total: <span class="simpleCart_grandTotal"></span></p>
+              <p class="sc-total">
+                (<span class="simpleCart_shipping"></span> ekspedisjonsgebyr + <span class="simpleCart_total"></span>) Total: <span class="simpleCart_grandTotal"></span></p>
             </div>
           </div>
 					<div id="success"></div>
@@ -486,7 +487,7 @@ simpleCart({
   currency: "NOK",
   cartStyle: "table",
   cartClass: "table table-responsive table-condensed table-inverse",
-  shippingQuantityRate: 40,
+  shippingQuantityRate: 85,
 });
 
 $(function() {
